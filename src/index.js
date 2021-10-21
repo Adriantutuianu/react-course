@@ -2,13 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+let city = "Madrid";
+
 ReactDOM.render(
   // React.createElement("h1", null, "Hello!"),
-  <ul>
-    <li>Pizza</li>
-    <li>Hamburger</li>
-    <li>Sushi</li>
-    <li>Hot dogs</li>
-  </ul>,
+  <h1>Hello from {city}!</h1>,
   document.getElementById("root")
 );
