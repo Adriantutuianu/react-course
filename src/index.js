@@ -18,12 +18,22 @@ function SkiResort({ name }) {
   );
 }
 
+// if (props.season === "summer") {
+//   return <Lake name="Jenny Lake" />;
+// } else if (props.season === "winter") {
+//   return <SkiResort name="JHMR" />;
+// }
+
 function App(props) {
-  if (props.season === "summer") {
-    return <Lake name="Jenny Lake" />;
-  } else if (props.season === "winter") {
-    return <SkiResort name="JHMR" />;
-  }
+  return (
+    <div>
+      {props.season === "summer" ? (
+        <Lake name="Jenny Lake" />
+      ) : (
+        <SkiResort name="JHMR" />
+      )}
+    </div>
+  );
 }
 
 ReactDOM.render(<App season="winter" />, document.getElementById("root"));
