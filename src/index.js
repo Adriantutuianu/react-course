@@ -8,12 +8,13 @@ function Hello(props) {
     <div>
       <h1>Welcome to {props.library}!</h1>
       <p>{props.message}</p>
+      <p>{props.number} Props Total</p>
     </div>
   );
 }
 
 ReactDOM.render(
   // React.createElement("h1", null, "Hello!"),
-  <Hello library="React" message="Have fun!" />,
+  <Hello library="React" message="Have fun!" number={3} />,
   document.getElementById("root")
 );
