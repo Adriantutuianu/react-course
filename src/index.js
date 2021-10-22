@@ -2,19 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-function Hello(props) {
-  console.log(Object.keys(props));
+function Hello({ library, message, number }) {
   return (
     <div>
-      <h1>Welcome to {props.library}!</h1>
-      <p>{props.message}</p>
-      <p>{Object.keys(props).length} Props Total</p>
+      <h1>Welcome to {library}!</h1>
+      <p>{message}</p>
+      <p>{number} Props Total</p>
     </div>
   );
 }
 
 ReactDOM.render(
   // React.createElement("h1", null, "Hello!"),
-  <Hello library="React" message="Have fun!" number={3} />,
+  <Hello library="React" message="add dynamic data" number={3} />,
   document.getElementById("root")
 );
