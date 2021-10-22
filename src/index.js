@@ -3,7 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 function Hello() {
-  return <h1> Welcome to React!</h1>;
+  return (
+    <div>
+      <h1>Welcome to React!</h1>
+      <p>Let`s build something cool.</p>
+    </div>
+  );
 }
 
 ReactDOM.render(
