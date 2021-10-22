@@ -7,13 +7,13 @@ function Hello(props) {
   return (
     <div>
       <h1>Welcome to {props.library}!</h1>
-      <p>Let`s build something cool.</p>
+      <p>{props.message}</p>
     </div>
   );
 }
 
 ReactDOM.render(
   // React.createElement("h1", null, "Hello!"),
-  <Hello library="React" />,
+  <Hello library="React" message="Have fun!" />,
   document.getElementById("root")
 );
