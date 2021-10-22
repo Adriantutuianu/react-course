@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-function Hello() {
+function Hello(props) {
+  console.log(props);
   return (
     <div>
-      <h1>Welcome to React!</h1>
+      <h1>Welcome to {props.library}!</h1>
       <p>Let`s build something cool.</p>
     </div>
   );
@@ -13,6 +14,6 @@ function Hello() {
 
 ReactDOM.render(
   // React.createElement("h1", null, "Hello!"),
-  <Hello></Hello>,
+  <Hello library="React" />,
   document.getElementById("root")
 );
