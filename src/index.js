@@ -7,6 +7,8 @@ function App() {
   return (
     <div>
       <h1>Status: {status}</h1>
+      <button onClick={() => setStatus(" Open")}>Open</button>
+      <button onClick={() => setStatus(" Back in 5")}>Back in 5</button>
       <button onClick={() => setStatus(" Closed")}>Closed</button>
     </div>
   );
