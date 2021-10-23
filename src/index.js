@@ -9,6 +9,7 @@ function App() {
     <>
       <div>
         <h1>Manager on Duty: {manager}</h1>
+        <button onClick={() => setManager("Rachel")}>New Manager</button>
       </div>
       <div>
         <h1>Status: {status}</h1>
