@@ -17,8 +17,12 @@ function Main(props) {
   );
 }
 
-function Footer() {
-  return <p>It`s true</p>;
+function Footer(props) {
+  return (
+    <footer>
+      <p>Copyright {props.year}</p>
+    </footer>
+  );
 }
 
 function App() {
@@ -26,7 +30,7 @@ function App() {
     <div className="App">
       <Header name="Cindy" />
       <Main adjective="amazing" />
-      <Footer />
+      <Footer year={new Date().getFullYear()} />
     </div>
   );
 }
