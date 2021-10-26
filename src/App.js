@@ -25,6 +25,9 @@ function Footer(props) {
   );
 }
 
+const dishes = ["Macaroni and Cheese", "Salmon", "Tofu with veggie"];
+dishes.map((dish) => console.log(dish));
+
 function App() {
   return (
     <div className="App">
