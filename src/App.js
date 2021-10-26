@@ -9,10 +9,10 @@ function Header(props) {
   );
 }
 
-function Main() {
+function Main(props) {
   return (
     <section>
-      <p>We serve the most delicious food around.</p>
+      <p>We serve the most {props.adjective} food around.</p>
     </section>
   );
 }
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Header name="Cindy" />
-      <Main />
+      <Main adjective="amazing" />
       <Footer />
     </div>
   );
