@@ -8,11 +8,19 @@ function Header() {
   );
 }
 
+function Main() {
+  return (
+    <section>
+      <p>We serve the most delicious food around.</p>
+    </section>
+  );
+}
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <h2>Main</h2>
+      <Main />
       <h3>Footer</h3>
     </div>
   );
