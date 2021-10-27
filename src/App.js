@@ -1,4 +1,5 @@
 import "./App.css";
+import restaurant from "./restaurant.jpg";
 
 function Header(props) {
   console.log(props);
@@ -13,6 +14,7 @@ function Main(props) {
   return (
     <section>
       <p>We serve the most {props.adjective} food around.</p>
+      <img src={restaurant} />
       <ul style={{ textAlign: "left" }}>
         {props.dishes.map((dish) => (
           <li>{dish}</li>
