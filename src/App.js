@@ -41,11 +41,11 @@ const dishes = ["Macaroni and Cheese", "Salmon", "Tofu with veggie"];
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header name="Cindy" />
       <Main adjective="amazing" dishes={dishes} />
       <Footer year={new Date().getFullYear()} />
-    </div>
+    </>
   );
 }
 
