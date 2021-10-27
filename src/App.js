@@ -2,7 +2,6 @@ import "./App.css";
 import restaurant from "./restaurant.jpg";
 
 function Header(props) {
-  console.log(props);
   return (
     <header>
       <h1>{props.name}`s Kitchen</h1>
@@ -20,8 +19,8 @@ function Main(props) {
         alt="napkin and fork at a restaurant table"
       />
       <ul style={{ textAlign: "left" }}>
-        {props.dishes.map((dish, i) => (
-          <li key={i}>{dish}</li>
+        {props.dishes.map((dish) => (
+          <li key={dish.id}>{dish.title}</li>
         ))}
         ;
       </ul>
@@ -39,11 +38,13 @@ function Footer(props) {
 
 const dishes = ["Macaroni and Cheese", "Salmon", "Tofu with veggie"];
 
+const dishObjects = dishes.map((dish, i) => ({ id: i, title: dish }));
+console.log(dishObjects);
 function App() {
   return (
     <>
       <Header name="Cindy" />
-      <Main adjective="amazing" dishes={dishes} />
+      <Main adjective="amazing" dishes={dishObjects} />
       <Footer year={new Date().getFullYear()} />
     </>
   );
