@@ -1,7 +1,7 @@
 import "./App.css";
 
 function SecretComponent() {
-  return <h1>Secret information for authorized users only</h1>;
+  return <h1>Secret information for authorized users only.</h1>;
 }
 
 function Regularcomponent() {
@@ -9,11 +9,7 @@ function Regularcomponent() {
 }
 
 function App(props) {
-  if (props.authorized) {
-    return <SecretComponent />;
-  } else {
-    return <Regularcomponent />;
-  }
+  return <>{props.authorized ? <SecretComponent /> : <Regularcomponent />}</>;
 }
 
 export default App;
