@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-const [mostImportantItem, second] = ["boots", "tent", "headlamp"];
-console.log(mostImportantItem, second);
+const [, , light] = ["boots", "tent", "headlamp"];
+console.log(light);
 
 ReactDOM.render(<App authorized={true} />, document.getElementById("root"));
