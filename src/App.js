@@ -1,15 +1,14 @@
+import React, { useState } from "react";
 import "./App.css";
 
-function SecretComponent() {
-  return <h1>Secret information for authorized users only.</h1>;
-}
-
-function Regularcomponent() {
-  return <h1>Everyone can see this component.</h1>;
-}
-
-function App({ authorized }) {
-  return <>{authorized ? <SecretComponent /> : <Regularcomponent />}</>;
+function App() {
+  const [emotion] = useState("happy");
+  console.log(emotion);
+  return (
+    <>
+      <h1>Hello</h1>
+    </>
+  );
 }
 
 export default App;
