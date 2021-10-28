@@ -1,12 +1,9 @@
 import React, { useState } from "react";
+import { useReducer } from "react/cjs/react.development";
 import "./App.css";
 
 function App() {
-  const [checked, setChecked] = useState(false);
-
-  function toggle() {
-    setChecked((checked) => !checked);
-  }
+  const [checked, toggle] = useReducer((checked) => !checked, false);
 
   return (
     <>
