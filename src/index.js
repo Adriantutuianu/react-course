@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-const checklist = ["boots", "tent", "headlamp"];
-console.log(checklist[1]);
+const [mostImportantItem, second] = ["boots", "tent", "headlamp"];
+console.log(mostImportantItem, second);
 
 ReactDOM.render(<App authorized={true} />, document.getElementById("root"));
