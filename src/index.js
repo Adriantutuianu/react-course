@@ -2,8 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import { BrowserRouter as router } from "react-router-dom";
 
 ReactDOM.render(
-  <App login="adriantutuianu" />,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById("root")
 );

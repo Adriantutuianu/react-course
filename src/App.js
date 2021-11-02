@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { Home, About, Events, Contact } from "./pages";
 
 function App() {
   return (
     <div>
-      <h1>Hello React Testing Library</h1>
+      <Routes>
+        <Route />
+        <Route />
+        <Route />
+        <Route />
+      </Routes>
     </div>
   );
 }
