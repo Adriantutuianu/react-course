@@ -37,3 +37,11 @@ export function Contact() {
     </div>
   );
 }
+
+export function Whoops404() {
+  return (
+    <div>
+      <h1>This page does not exist!</h1>
+    </div>
+  );
+}
